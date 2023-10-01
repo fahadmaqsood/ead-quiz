@@ -28,7 +28,7 @@
             </div>
             <!-- Status select field -->
             <div class="form-group">
-                <label for="status">Status</label>
+                <label for="status">Progress</label>
                 <select class="form-control" id="status">
                     <option>Not Started</option>
                     <option>Started</option>
@@ -44,6 +44,11 @@
                     <option>Medium</option>
                     <option>High</option>
                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dueDate">Due Date</label>
+                <input type="date" class="form-control" id="dueDate" placeholder="Enter due date">
             </div>
 
             <!-- Submit button -->
@@ -63,8 +68,10 @@
                         <th scope="col">Task</th>
                         <th scope="col">Assigned To</th>
 
+                        <th scope="col">Due Date</th>
+
                         <!-- Status column header -->
-                        <th scope="col">Status</th>
+                        <th scope="col">Progress</th>
 
                         <!-- Priority column header -->
                         <th scope="col">Priority</th>
@@ -82,6 +89,9 @@
                     <td>1</td>
                     <td>Mid Assignment</td>
                     <td>Fahad Maqsood Qazi</td>
+
+                    <td>12 November, 2023</td>
+
                     <td>
                         <select class="form-control" id="status">
                             <option>Not Started</option>
@@ -108,6 +118,9 @@
                     <td>2</td>
                     <td>Final Assignment</td>
                     <td>Fahad Maqsood Qazi</td>
+
+                    <td>25 December, 2023</td>
+
                     <td>
                         <select class="form-control" id="status">
                             <option>Not Started</option>
