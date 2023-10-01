@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TaskMaster: A Task Management Web Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center p-5 col-12">
+        <h1>Welcome to TaskMaster: A Task Management Web Application</h1>
+        <p>Manage your tasks efficiently and effectively</p>
+    </header>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Add a Task</h2>
+        <form>
+            <div class="form-group">
+                <label for="taskName">Task Name</label>
+                <input type="text" class="form-control" id="taskName" placeholder="Enter task name">
+            </div>
+            <div class="form-group">
+                <label for="assignedTo">Assigned To</label>
+                <input type="text" class="form-control" id="assignedTo" placeholder="Enter assignee name">
+            </div>
+            <!-- Status select field -->
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select class="form-control" id="status">
+                    <option>Not Started</option>
+                    <option>Started</option>
+                    <option>Completed</option>
+                </select>
+            </div>
+
+            <!-- Priority select field -->
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <select class="form-control" id="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+        <!-- Table with status and priority select fields, and update button -->
+        <h2 class="text-center my-4">Your Tasks</h2>
+
+        <!-- Table with status column -->
+        <div class="table-responsive border">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Task</th>
+                        <th scope="col">Assigned To</th>
+
+                        <!-- Status column header -->
+                        <th scope="col">Status</th>
+
+                        <!-- Priority column header -->
+                        <th scope="col">Priority</th>
+
+                        <!-- Column for update and delete buttons -->
+                        <th scope="col"></th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Example task rows with status and priority select fields, and update button -->
+
+                <tr>
+                    <td>1</td>
+                    <td>Mid Assignment</td>
+                    <td>Fahad Maqsood Qazi</td>
+                    <td>
+                        <select class="form-control" id="status">
+                            <option>Not Started</option>
+                            <option>Started</option>
+                            <option selected>Completed</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select class="form-control" id="priority">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option selected>High</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Final Assignment</td>
+                    <td>Fahad Maqsood Qazi</td>
+                    <td>
+                        <select class="form-control" id="status">
+                            <option>Not Started</option>
+                            <option selected>Started</option>
+                            <option>Completed</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select class="form-control" id="priority">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option selected>High</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 col-12">
+        © 2023 Task Management
+    </footer>
+
+</body>
+
+</html>
